@@ -1,3 +1,7 @@
+# https://github.com/rickpatking/lab10-PK-LM.git
+# Partner 1: Patrick King
+# Partner 2: Logan Mears
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
