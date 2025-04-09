@@ -61,15 +61,15 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
-        # with self.assertRaises(ValueError):
-        #     logarithm(0, 5)
-        self.assertRaises(logarithm(0,5), ValueError)
+        with self.assertRaises(ValueError):
+            logarithm(0, 5)
+
     ##########################
     
     # Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         # call log function inside, example:
-        with self.assertRaises(ZeroDivisionError):
+        with self.assertRaises(ValueError):
             logarithm(0, 5)
 
 
@@ -84,11 +84,11 @@ class TestCalculator(unittest.TestCase):
         #    square_root(NUM)
         # Test basic function
         with self.assertRaises(ValueError):
-            square_root(9)
+            square_root(-9)
         with self.assertRaises(ValueError):
-            square_root(27)
+            square_root(-27)
         with self.assertRaises(ValueError):
-            square_root(4)
+            square_root(-4)
     ##########################
 
 # Do not touch this
