@@ -62,7 +62,7 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
         with self.assertRaises(ValueError):
-            logarithm(0, 5)
+            logarithm(1, 5)
     ##########################
     
     # Partner 1
@@ -70,7 +70,7 @@ class TestCalculator(unittest.TestCase):
         # call log function inside, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     logarithm(0, 5)
-        self.assertRaises(logarithm(0, 5), ValueError)
+        self.assertRaises(logarithm(1, 5), ValueError)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse(3, 4), 5)
@@ -82,9 +82,9 @@ class TestCalculator(unittest.TestCase):
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #    square_root(NUM)
         # Test basic function
-        self.assertRaises(square_root(5), ValueError)
-        self.assertRaises(square_root(7), ValueError)
-        self.assertRaises(square_root(10), ValueError)
+        self.assertRaises(square_root(9), ValueError)
+        self.assertRaises(square_root(27), ValueError)
+        self.assertRaises(square_root(4), ValueError)
     ##########################
 
 # Do not touch this
